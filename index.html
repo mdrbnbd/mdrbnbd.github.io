@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Robin — Web Developer from Bangladesh</title>
+  <meta name="description" content="Robin is a web developer from Bangladesh building fast, mobile-first websites, PWAs and API-powered tools. Portfolio, projects, services and contact." />
+  <meta name="author" content="Robin (mdrbnbd)" />
+  <meta name="keywords" content="Robin, mdrbnbd, web developer, Bangladesh, portfolio, PWA, JavaScript, GitHub Pages, ওয়েব ডেভেলপার" />
+  <meta name="theme-color" content="#0b0d17" />
+  <link rel="canonical" href="https://mdrbnbd.github.io/" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="favicon.png" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mdrbnbd.github.io/" />
+  <meta property="og:title" content="Robin — Web Developer" />
+  <meta property="og:description" content="Fast, mobile-first websites, PWAs and API-powered tools from Bangladesh." />
+  <meta property="og:image" content="https://mdrbnbd.github.io/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="bn_BD" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Robin — Web Developer" />
+  <meta name="twitter:description" content="Fast, mobile-first websites, PWAs and API-powered tools from Bangladesh." />
+  <meta name="twitter:image" content="https://mdrbnbd.github.io/og-image.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Robin","jobTitle":"Web Developer","url":"https://mdrbnbd.github.io/","sameAs":["https://github.com/mdrbnbd"],"address":{"@type":"PostalAddress","addressCountry":"BD"}}
+  </script>
+  <script>
+    // Apply saved theme/lang before paint (avoids flash)
+    (function(){try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;var l=localStorage.getItem('lang');if(l)document.documentElement.lang=l;}catch(e){}})();
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="ui.skip">Skip to content</a>
+
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a href="#home" class="brand" aria-label="Home"><span class="brand__logo" aria-hidden="true">R</span><span class="brand__name" data-cfg="name">Robin</span></a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <button class="chip" id="langToggle" type="button" aria-label="Switch language">বাংলা</button>
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle light/dark theme">
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span><span class="grid"></span></div>
+      <div class="container hero__inner">
+        <p class="eyebrow reveal"><span class="dot"></span> <span data-i18n="hero.status">Available for freelance work</span></p>
+        <h1 class="hero__title reveal"><span data-i18n="hero.hi">Hi, I'm</span> <span class="grad" data-cfg="name">Robin</span></h1>
+        <p class="hero__role reveal"><span data-i18n="title">Web Developer</span> <span class="cursor" aria-hidden="true">|</span></p>
+        <p class="hero__bio reveal" data-i18n="tagline">I build fast, mobile-first websites and web apps.</p>
+        <div class="hero__cta reveal">
+          <a class="btn btn--primary" href="#projects" data-i18n="hero.cta1">View my work</a>
+          <a class="btn btn--ghost" href="#contact" data-i18n="hero.cta2">Hire me</a>
+        </div>
+        <ul class="stats reveal" id="stats"></ul>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about__avatar reveal" aria-hidden="true">
+          <div class="avatar" id="avatar"><span>R</span></div>
+        </div>
+        <div class="reveal">
+          <h2 class="section__title"><span class="num">01.</span> <span data-i18n="nav.about">About</span></h2>
+          <p class="lead" data-i18n="bio">Bio</p>
+          <p class="muted"><span aria-hidden="true">📍</span> <span data-i18n="location">Bangladesh</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <h2 class="section__title reveal"><span class="num">02.</span> <span data-i18n="nav.skills">Skills</span></h2>
+        <p class="section__sub reveal" data-i18n="skills.sub">Tools and technologies I use every day.</p>
+        <div class="skills" id="skillsList"></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section__title reveal"><span class="num">03.</span> <span data-i18n="nav.projects">Projects</span></h2>
+        <p class="section__sub reveal" data-i18n="projects.sub">Things I've built and shipped.</p>
+        <div class="projects" id="projectsList"></div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section section--alt" id="services">
+      <div class="container">
+        <h2 class="section__title reveal"><span class="num">04.</span> <span data-i18n="nav.services">Services</span></h2>
+        <p class="section__sub reveal" data-i18n="services.sub">How I can help you.</p>
+        <div class="services" id="servicesList"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container contact reveal">
+        <h2 class="section__title"><span class="num">05.</span> <span data-i18n="nav.contact">Contact</span></h2>
+        <p class="lead" data-i18n="contact.text">Have a project in mind? Let's talk.</p>
+        <div class="contact__grid" id="contactList"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> <span data-cfg="name">Robin</span> · <span data-i18n="footer.made">Built with HTML, CSS &amp; JavaScript · Hosted on GitHub Pages</span></p>
+      <a href="#home" class="to-top" data-i18n="footer.top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <noscript><p class="container" style="padding:1rem">This site works best with JavaScript enabled. GitHub: <a href="https://github.com/mdrbnbd">github.com/mdrbnbd</a></p></noscript>
+  <script src="script.js" defer></script>
+</body>
+</html>
