@@ -1,201 +1,72 @@
-/* =====================================================================
- *  ✏️  EDIT YOUR PROFILE HERE — all personal content lives in CONFIG.
- *  Each text field has { en: "...", bn: "..." } for English / বাংলা.
- *  Anything marked  placeholder: true  is shown with a "Placeholder"
- *  badge until you replace it with real info and set placeholder: false.
- * ===================================================================== */
-const CONFIG = {
-  name: "Robin",
-  githubUser: "mdrbnbd",
-  title: { en: "Web Developer", bn: "ওয়েব ডেভেলপার" },
-  tagline: {
-    en: "I build fast, mobile-first websites, PWAs and API-powered tools that people actually enjoy using.",
-    bn: "আমি দ্রুত, মোবাইল-ফ্রেন্ডলি ওয়েবসাইট, PWA আর API-ভিত্তিক টুল বানাই, যেগুলো মানুষ সত্যিই ব্যবহার করতে পছন্দ করে।"
-  },
-  bio: {
-    en: "I'm Robin, a web developer from Bangladesh. I love turning ideas into clean, responsive and lightning-fast web experiences — from simple landing pages to installable Progressive Web Apps that talk to real APIs. I care about performance, accessibility and building tools that solve everyday problems, often in Bangla for local users.",
-    bn: "আমি রবিন, বাংলাদেশের একজন ওয়েব ডেভেলপার। আইডিয়াকে পরিষ্কার, রেসপন্সিভ আর খুব দ্রুত ওয়েবসাইটে রূপ দিতে ভালোবাসি — সাধারণ ল্যান্ডিং পেজ থেকে শুরু করে আসল API-র সাথে কাজ করা ইনস্টলযোগ্য PWA পর্যন্ত। পারফরম্যান্স, অ্যাক্সেসিবিলিটি আর দৈনন্দিন সমস্যার সমাধান করে এমন টুল বানানো আমার কাছে গুরুত্বপূর্ণ, প্রায়ই বাংলায়, স্থানীয় ব্যবহারকারীদের জন্য।"
-  },
-  location: { en: "Bangladesh", bn: "বাংলাদেশ" },
-  availableForWork: true,
-
-  stats: [
-    { value: "PWA", label: { en: "Installable apps", bn: "ইনস্টলযোগ্য অ্যাপ" } },
-    { value: "100%", label: { en: "Mobile-first", bn: "মোবাইল-ফার্স্ট" } },
-    { value: "EN/বাং", label: { en: "Bilingual sites", bn: "দ্বিভাষিক সাইট" } }
-  ],
-
-  // Skills — add/remove freely. level = 0..100 (bar width)
-  skills: [
-    { name: "HTML5", icon: "🧱", level: 95 },
-    { name: "CSS3", icon: "🎨", level: 90 },
-    { name: "JavaScript", icon: "⚡", level: 85 },
-    { name: "PWA", icon: "📱", level: 80 },
-    { name: "GitHub Pages", icon: "🚀", level: 90 },
-    { name: "API Integration", icon: "🔌", level: 80 },
-    { name: "Responsive Design", icon: "📐", level: 90 },
-    { name: "Git & GitHub", icon: "🌿", level: 85 }
-  ],
-
-  projects: [
-    {
-      title: { en: "VIP Number Finder", bn: "ভিআইপি নাম্বার ফাইন্ডার" },
-      description: {
-        en: "A Bangla Progressive Web App that finds available VIP Robi/Airtel numbers. Supports multi-series and custom pattern search (birthdays, repeating digits, sequences) and ranks every number with a VIP score.",
-        bn: "বাংলা PWA, যেটা খালি থাকা রবি/এয়ারটেলের ভিআইপি নাম্বার খুঁজে বের করে। একসাথে অনেক সিরিজে আর নিজের প্যাটার্নে (জন্মতারিখ, একই সংখ্যা, ক্রমিক সংখ্যা) খোঁজা যায়, আর প্রতিটা নাম্বারকে ভিআইপি স্কোর দিয়ে সাজানো হয়।"
-      },
-      tags: ["PWA", "JavaScript", "API", "বাংলা"],
-      live: "https://vip.dfaster.com",
-      repo: "https://github.com/mdrbnbd/vip-number-finder",
-      featured: true,
-      emoji: "📞"
-    }
-  ],
-
-  // Contact — replace placeholders with your real details, then set placeholder: false
-  contact: [
-    { type: "whatsapp", label: "WhatsApp", value: "01766119905", url: "https://wa.me/8801766119905", icon: "💬" },
-    { type: "github", label: "GitHub", value: "github.com/mdrbnbd", url: "https://github.com/mdrbnbd", icon: "🐙" }
-  ]
+/* Robin — portfolio. Text lives in the BN dictionary below (English is in index.html). */
+const BN = {
+  "skip": "মূল অংশে যান",
+  "nav.about": "পরিচিতি", "nav.skills": "দক্ষতা", "nav.services": "সেবা", "nav.work": "কাজ", "nav.contact": "যোগাযোগ",
+  "hero.eyebrow": "নতুন প্রজেক্টের জন্য প্রস্তুত", "hero.hi": "হাই, আমি", "hero.role": "ওয়েব ডেভেলপার",
+  "hero.tagline": "আমি দ্রুত, আধুনিক আর মোবাইল-ফ্রেন্ডলি ওয়েবসাইট ও ওয়েব অ্যাপ ডিজাইন করি ও বানাই, যা দেখতে সুন্দর আর ব্যবহার করা সহজ।",
+  "cta.wa": "WhatsApp-এ মেসেজ দিন", "chip.code": "পরিষ্কার কোড", "chip.mobile": "মোবাইল-ফার্স্ট",
+  "about.k": "আমার পরিচয়", "about.h": "আইডিয়াকে দ্রুত আর সুন্দর ওয়েবসাইটে রূপ দিই",
+  "about.p1": "আমি রবিন, বাংলাদেশের একজন ওয়েব ডেভেলপার। এমন ওয়েবসাইট আর ওয়েব অ্যাপ বানাই, যা যেকোনো ফোনে দ্রুত খোলে, দেখতে পরিষ্কার আর সাধারণ মানুষের জন্য ব্যবহার করা সহজ।",
+  "about.p2": "একটা ল্যান্ডিং পেজ থেকে পুরো ওয়েব অ্যাপ পর্যন্ত, ডিজাইন, কোড আর আপনার নিজের ডোমেইনে লাইভ করা সবই আমি করি, ইংরেজি আর বাংলা দুই ভাষাতেই।",
+  "about.loc": "বাংলাদেশে থাকি", "about.lang": "ইংরেজি ও বাংলা", "about.focus": "দ্রুতগতি ও মোবাইল-ফার্স্ট",
+  "skills.k": "টেক স্ট্যাক", "skills.h": "যেসব টুল দিয়ে কাজ করি",
+  "sk.html": "সেমান্টিক, অ্যাক্সেসিবল মার্কআপ", "sk.css": "রেসপন্সিভ লেআউট ও অ্যানিমেশন", "sk.js": "ইন্টারঅ্যাকটিভ, দ্রুত ফ্রন্ট-এন্ড",
+  "sk.react": "কম্পোনেন্ট-ভিত্তিক ওয়েব অ্যাপ", "sk.node": "API ও সার্ভার-সাইড লজিক", "sk.pwa": "ইনস্টলযোগ্য, অফলাইনে চলা অ্যাপ",
+  "sk.ghp": "নিজের ডোমেইন ও HTTPS সহ হোস্টিং", "sk.api": "বিভিন্ন সার্ভিসের সাথে সংযোগ", "sk.ux": "পরিষ্কার, সহজ ডিজাইন",
+  "svc.k": "সেবা", "svc.h": "আমি যেভাবে সাহায্য করতে পারি",
+  "svc.1t": "ওয়েবসাইট ডেভেলপমেন্ট", "svc.1p": "ব্যবসা, দোকান আর ব্যক্তিগত ব্র্যান্ডের জন্য আধুনিক, রেসপন্সিভ ওয়েবসাইট।",
+  "svc.2t": "ওয়েব অ্যাপ", "svc.2p": "আসল API ডেটা সহ ইন্টারঅ্যাকটিভ টুল, ড্যাশবোর্ড আর ইনস্টলযোগ্য PWA।",
+  "svc.3t": "ল্যান্ডিং পেজ", "svc.3p": "দ্রুত, লক্ষ্যভিত্তিক পেজ, যা ভিজিটরকে কাস্টমারে পরিণত করে।",
+  "svc.4t": "ই-কমার্স", "svc.4p": "প্রোডাক্ট ক্যাটালগ, কার্ট আর সহজ অর্ডার সহ অনলাইন দোকান।",
+  "svc.5t": "মেইনটেন্যান্স ও সাপোর্ট", "svc.5p": "আপডেট, সমস্যা সমাধান, স্পিড বাড়ানো আর ডোমেইন/হোস্টিং সেটআপ।",
+  "work.k": "ফিচার্ড প্রজেক্ট", "work.h": "সাম্প্রতিক কাজ", "work.badge": "লাইভ · PWA", "work.t": "ভিআইপি নাম্বার ফাইন্ডার",
+  "work.p": "বাংলা প্রোগ্রেসিভ ওয়েব অ্যাপ, যা খালি থাকা রবি আর এয়ারটেলের ভিআইপি নাম্বার খুঁজে দেয়। সিরিজ বা নিজের প্যাটার্নে (জন্মতারিখ, একই সংখ্যা, ক্রমিক সংখ্যা) খুঁজুন, আর প্রতিটা নাম্বার ভিআইপি স্কোর অনুযায়ী সাজানো দেখুন। যেকোনো ফোনে ইনস্টল করা যায়।",
+  "work.live": "লাইভ সাইট দেখুন", "work.code": "সোর্স কোড",
+  "ct.k": "যোগাযোগ", "ct.h": "চলুন আপনার পরের ওয়েবসাইটটা বানাই", "ct.p": "আপনার প্রজেক্টের কথা WhatsApp-এ জানান। সাধারণত দ্রুত উত্তর দিই।", "ct.wa": "WhatsApp",
+  "foot": "ওয়েব ডেভেলপার, বাংলাদেশ", "top": "উপরে যান ↑"
 };
 
-/* ============================ UI TEXT ============================ */
-const I18N = {
-  en: {
-    "ui.skip": "Skip to content",
-    "nav.about": "About", "nav.skills": "Skills", "nav.projects": "Projects", "nav.contact": "Contact",
-    "hero.status": "Available for freelance work", "hero.hi": "Hi, I'm",
-    "hero.cta1": "View my work", "hero.cta2": "WhatsApp", "contact.wa": "Chat on WhatsApp",
-    "skills.sub": "Tools and technologies I use every day.",
-    "projects.sub": "My live project.",
-    "contact.text": "Have a project in mind? Let's build it together.",
-    "footer.made": "Built with HTML, CSS & JavaScript · Hosted on GitHub Pages",
-    "footer.top": "Back to top ↑",
-    live: "Live site", code: "Source code", featured: "Featured", placeholder: "Placeholder",
-    copy: "Copy", copied: "Copied!", lang: "বাংলা"
-  },
-  bn: {
-    "ui.skip": "মূল অংশে যান",
-    "nav.about": "পরিচিতি", "nav.skills": "দক্ষতা", "nav.projects": "প্রজেক্ট", "nav.contact": "যোগাযোগ",
-    "hero.status": "ফ্রিল্যান্স কাজের জন্য প্রস্তুত", "hero.hi": "হাই, আমি",
-    "hero.cta1": "আমার কাজ দেখুন", "hero.cta2": "হোয়াটসঅ্যাপ", "contact.wa": "হোয়াটসঅ্যাপে মেসেজ দিন",
-    "skills.sub": "যেসব টুল আর প্রযুক্তি দিয়ে প্রতিদিন কাজ করি।",
-    "projects.sub": "আমার লাইভ প্রজেক্ট।",
-    "contact.text": "কোনো প্রজেক্টের আইডিয়া আছে? চলুন একসাথে বানাই।",
-    "footer.made": "HTML, CSS ও JavaScript দিয়ে তৈরি · GitHub Pages-এ হোস্ট করা",
-    "footer.top": "উপরে যান ↑",
-    live: "লাইভ সাইট", code: "সোর্স কোড", featured: "ফিচার্ড", placeholder: "প্লেসহোল্ডার",
-    copy: "কপি", copied: "কপি হয়েছে!", lang: "English"
-  }
-};
-
-/* ============================ APP ============================ */
 (() => {
-  const $ = (s, r = document) => r.querySelector(s);
-  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-  const root = document.documentElement;
-  let lang = root.lang === "bn" ? "bn" : "en";
-  const t = (v) => (v && typeof v === "object" ? v[lang] ?? v.en : v);
-  const ui = (k) => I18N[lang][k] ?? I18N.en[k] ?? k;
-  const phBadge = () => `<span class="badge badge--ph">${ui("placeholder")}</span>`;
-
-  function render() {
-    root.lang = lang;
-    document.querySelectorAll("[data-cfg]").forEach((el) => (el.textContent = CONFIG[el.dataset.cfg]));
+  const root = document.documentElement, $ = (s) => document.querySelector(s);
+  const EN = {};
+  document.querySelectorAll("[data-i18n]").forEach((el) => (EN[el.dataset.i18n] = el.innerHTML));
+  const langBtn = $("#langBtn");
+  function setLang(l) {
+    root.lang = l;
     document.querySelectorAll("[data-i18n]").forEach((el) => {
-      const k = el.dataset.i18n;
-      el.textContent = CONFIG[k] !== undefined ? t(CONFIG[k]) : ui(k);
+      const k = el.dataset.i18n; el.innerHTML = l === "bn" && BN[k] ? BN[k] : EN[k];
     });
-    $("#langToggle").textContent = ui("lang");
-    $("#langToggle").setAttribute("aria-label", lang === "en" ? "বাংলায় দেখুন" : "Switch to English");
-    $(".eyebrow").hidden = !CONFIG.availableForWork;
-
-    $("#stats").innerHTML = CONFIG.stats.map((s) => `<li><strong>${esc(s.value)}</strong><span>${esc(t(s.label))}</span></li>`).join("");
-
-    $("#skillsList").innerHTML = CONFIG.skills.map((s, i) => `
-      <div class="skill reveal" style="--d:${i * 60}ms">
-        <div class="skill__head"><span class="skill__icon" aria-hidden="true">${esc(s.icon)}</span><span>${esc(s.name)}</span></div>
-        <div class="bar" role="progressbar" aria-label="${esc(s.name)}" aria-valuenow="${s.level}" aria-valuemin="0" aria-valuemax="100"><span style="--w:${s.level}%"></span></div>
-      </div>`).join("");
-
-    $("#projectsList").innerHTML = CONFIG.projects.map((p, i) => `
-      <article class="project reveal ${p.featured ? "project--featured" : ""} ${p.placeholder ? "is-ph" : ""}" style="--d:${i * 80}ms">
-        <div class="project__media" aria-hidden="true"><span>${esc(p.emoji || "🌐")}</span></div>
-        <div class="project__body">
-          <div class="project__badges">${p.featured ? `<span class="badge">${ui("featured")}</span>` : ""}${p.placeholder ? phBadge() : ""}</div>
-          <h3>${esc(t(p.title))}</h3>
-          <p>${esc(t(p.description))}</p>
-          <ul class="tags">${(p.tags || []).map((g) => `<li>${esc(g)}</li>`).join("")}</ul>
-          <div class="project__links">
-            ${p.live ? `<a class="btn btn--primary btn--sm" href="${esc(p.live)}" target="_blank" rel="noopener">${ui("live")} ↗</a>` : ""}
-            ${p.repo ? `<a class="btn btn--ghost btn--sm" href="${esc(p.repo)}" target="_blank" rel="noopener">${ui("code")}</a>` : ""}
-          </div>
-        </div>
-      </article>`).join("");
-
-    $("#contactList").innerHTML = CONFIG.contact.map((c) => {
-      const inner = `<span class="contact__icon" aria-hidden="true">${esc(c.icon)}</span>
-        <span class="contact__txt"><small>${esc(c.label)} ${c.placeholder ? phBadge() : ""}</small><strong>${esc(c.value)}</strong></span>`;
-      const href = c.placeholder ? "" : c.url;
-      return href
-        ? `<a class="contact__item" href="${esc(href)}" target="_blank" rel="noopener">${inner}<span class="arrow" aria-hidden="true">↗</span></a>`
-        : `<div class="contact__item ${c.placeholder ? "is-ph" : ""}">${inner}<button class="copy" type="button" data-copy="${esc(c.value)}">${ui("copy")}</button></div>`;
-    }).join("");
-
-    observe();
+    langBtn.textContent = l === "bn" ? "English" : "বাংলা";
+    langBtn.setAttribute("aria-label", l === "bn" ? "Switch to English" : "বাংলায় দেখুন");
+    try { localStorage.setItem("lang", l); } catch (e) {}
   }
+  langBtn.addEventListener("click", () => setLang(root.lang === "bn" ? "en" : "bn"));
+  if (root.lang === "bn") setLang("bn");
 
-  // Scroll reveal
-  const io = "IntersectionObserver" in window
-    ? new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: 0.12 })
-    : null;
-  function observe() {
-    document.querySelectorAll(".reveal:not(.in)").forEach((el) => (io ? io.observe(el) : el.classList.add("in")));
-  }
-
-  // Theme
-  $("#themeToggle").addEventListener("click", () => {
-    const next = root.dataset.theme === "light" ? "dark" : "light";
-    root.dataset.theme = next;
-    try { localStorage.setItem("theme", next); } catch (e) {}
-    $('meta[name="theme-color"]').content = next === "light" ? "#f6f7fb" : "#0b0d17";
+  const setThemeColor = () => ($('meta[name="theme-color"]').content = root.dataset.theme === "light" ? "#f5f6fb" : "#0a0c14");
+  $("#themeBtn").addEventListener("click", () => {
+    root.dataset.theme = root.dataset.theme === "light" ? "dark" : "light";
+    try { localStorage.setItem("theme", root.dataset.theme); } catch (e) {}
+    setThemeColor();
   });
+  setThemeColor();
 
-  // Language
-  $("#langToggle").addEventListener("click", () => {
-    lang = lang === "en" ? "bn" : "en";
-    try { localStorage.setItem("lang", lang); } catch (e) {}
-    render();
-  });
+  const menu = $("#menuBtn"), links = $("#navLinks");
+  menu.addEventListener("click", () => { const o = links.classList.toggle("open"); menu.setAttribute("aria-expanded", o); document.body.classList.toggle("menu-open", o); });
+  links.addEventListener("click", (e) => { if (e.target.closest("a")) { links.classList.remove("open"); menu.setAttribute("aria-expanded", "false"); document.body.classList.remove("menu-open"); } });
 
-  // Mobile menu
-  const menuBtn = $("#menuToggle"), links = $("#navLinks");
-  menuBtn.addEventListener("click", () => {
-    const open = links.classList.toggle("open");
-    menuBtn.setAttribute("aria-expanded", open);
-  });
-  links.addEventListener("click", (e) => { if (e.target.closest("a")) { links.classList.remove("open"); menuBtn.setAttribute("aria-expanded", "false"); } });
+  const els = document.querySelectorAll(".rv");
+  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+    els.forEach((el, i) => { el.style.setProperty("--d", (i % 6) * 70 + "ms"); io.observe(el); });
+  } else els.forEach((el) => el.classList.add("in"));
 
-  // Copy buttons
-  document.addEventListener("click", async (e) => {
-    const b = e.target.closest("[data-copy]");
-    if (!b) return;
-    try { await navigator.clipboard.writeText(b.dataset.copy); b.textContent = ui("copied"); setTimeout(() => (b.textContent = ui("copy")), 1500); } catch (err) {}
-  });
-
-  // Header shadow + active link
-  const header = $(".nav");
-  const sections = [...document.querySelectorAll("main section[id]")];
+  const nav = $("#nav"), secs = [...document.querySelectorAll("main section[id]")];
   const onScroll = () => {
-    header.classList.toggle("scrolled", scrollY > 10);
-    let cur = "";
-    sections.forEach((s) => { if (scrollY + 120 >= s.offsetTop) cur = s.id; });
+    nav.classList.toggle("scrolled", scrollY > 8);
+    let cur = ""; secs.forEach((s) => { if (scrollY + 140 >= s.offsetTop) cur = s.id; });
     links.querySelectorAll("a").forEach((a) => a.classList.toggle("active", a.getAttribute("href") === "#" + cur));
   };
-  addEventListener("scroll", onScroll, { passive: true });
-
+  addEventListener("scroll", onScroll, { passive: true }); onScroll();
   $("#year").textContent = new Date().getFullYear();
-  if (root.dataset.theme === "light") $('meta[name="theme-color"]').content = "#f6f7fb";
-  render();
-  onScroll();
 })();

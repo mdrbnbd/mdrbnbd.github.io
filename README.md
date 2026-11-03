@@ -1,11 +1,8 @@
-# Robin — Portfolio
+# Robin — Web Developer portfolio
 
-Live: **https://mdrbnbd.github.io/**
+Live: **https://dfaster.com/**
 
-Static personal portfolio (no build step): `index.html`, `styles.css`, `script.js`.
+Static site (no build step): `index.html`, `styles.css`, `script.js`, images in `img/`.
+English text is in `index.html`; Bangla translations are in the `BN` object at the top of `script.js` (matched by `data-i18n` keys).
 
-## Edit your info
-All personal content (bio, skills, VIP Number Finder project, WhatsApp/GitHub contact) is in the `CONFIG` object at the top of **`script.js`**, in English (`en`) and Bangla (`bn`).
-Items marked `placeholder: true` show a "Placeholder" badge — replace the text and set `placeholder: false`.
-
-Features: dark/light theme, English/বাংলা toggle, scroll animations, mobile-first, SEO + Open Graph meta.
+Features: dark/light mode, English/বাংলা toggle, scroll animations, mobile-first, SEO + Open Graph meta, WhatsApp contact.

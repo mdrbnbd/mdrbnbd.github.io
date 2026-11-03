@@ -2,65 +2,64 @@
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Robin — Web Developer from Bangladesh</title>
-  <meta name="description" content="Robin is a web developer from Bangladesh building fast, mobile-first websites, PWAs and API-powered tools. Developer profile, VIP Number Finder and WhatsApp contact." />
-  <meta name="author" content="Robin (mdrbnbd)" />
-  <meta name="keywords" content="Robin, mdrbnbd, web developer, Bangladesh, portfolio, PWA, JavaScript, GitHub Pages, ওয়েব ডেভেলপার" />
-  <meta name="theme-color" content="#0b0d17" />
-  <link rel="canonical" href="https://mdrbnbd.github.io/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Robin — Web Developer | Websites, Web Apps & Landing Pages</title>
+  <meta name="description" content="Robin is a web developer from Bangladesh building fast, modern, mobile-first websites, web apps, landing pages and e-commerce sites. Chat on WhatsApp: 01766119905." />
+  <meta name="author" content="Robin" />
+  <meta name="theme-color" content="#0a0c14" />
+  <link rel="canonical" href="https://dfaster.com/" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="apple-touch-icon" href="favicon.png" />
+  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
 
-  <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://mdrbnbd.github.io/" />
+  <meta property="og:site_name" content="Robin — Web Developer" />
+  <meta property="og:url" content="https://dfaster.com/" />
   <meta property="og:title" content="Robin — Web Developer" />
-  <meta property="og:description" content="Fast, mobile-first websites, PWAs and API-powered tools from Bangladesh." />
-  <meta property="og:image" content="https://mdrbnbd.github.io/og-image.png" />
+  <meta property="og:description" content="Fast, modern, mobile-first websites and web apps. Chat on WhatsApp to start your project." />
+  <meta property="og:image" content="https://dfaster.com/og-image.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Robin, Web Developer" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:locale:alternate" content="bn_BD" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Robin — Web Developer" />
-  <meta name="twitter:description" content="Fast, mobile-first websites, PWAs and API-powered tools from Bangladesh." />
-  <meta name="twitter:image" content="https://mdrbnbd.github.io/og-image.png" />
+  <meta name="twitter:description" content="Fast, modern, mobile-first websites and web apps." />
+  <meta name="twitter:image" content="https://dfaster.com/og-image.jpg" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="img/robin.webp" type="image/webp" />
   <link rel="stylesheet" href="styles.css" />
 
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Person","name":"Robin","jobTitle":"Web Developer","url":"https://mdrbnbd.github.io/","sameAs":["https://github.com/mdrbnbd"],"address":{"@type":"PostalAddress","addressCountry":"BD"}}
+  {"@context":"https://schema.org","@type":"Person","name":"Robin","jobTitle":"Web Developer","url":"https://dfaster.com/","image":"https://dfaster.com/img/robin.jpg","telephone":"+8801766119905","sameAs":["https://github.com/mdrbnbd"],"address":{"@type":"PostalAddress","addressCountry":"BD"},"knowsAbout":["HTML","CSS","JavaScript","React","Node.js","PWA","API integration","UI/UX"]}
   </script>
-  <script>
-    // Apply saved theme/lang before paint (avoids flash)
-    (function(){try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;var l=localStorage.getItem('lang');if(l)document.documentElement.lang=l;}catch(e){}})();
-  </script>
+  <script>(function(){try{var t=localStorage.getItem('theme');if(!t&&matchMedia('(prefers-color-scheme: light)').matches)t='light';if(t)document.documentElement.dataset.theme=t;var l=localStorage.getItem('lang');if(l)document.documentElement.lang=l;}catch(e){}})();</script>
 </head>
 <body>
-  <a class="skip" href="#main" data-i18n="ui.skip">Skip to content</a>
+  <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+  <div class="bg" aria-hidden="true"><span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span><span class="gridlines"></span></div>
 
-  <header class="nav" id="top">
-    <div class="container nav__inner">
-      <a href="#home" class="brand" aria-label="Home"><span class="brand__logo" aria-hidden="true">R</span><span class="brand__name" data-cfg="name">Robin</span></a>
+  <header class="nav" id="nav">
+    <div class="wrap nav__in">
+      <a href="#home" class="brand" aria-label="Robin — home"><span class="brand__mark">R</span><span class="brand__txt">Robin<span class="dot">.</span></span></a>
       <nav class="nav__links" id="navLinks" aria-label="Primary">
         <a href="#about" data-i18n="nav.about">About</a>
         <a href="#skills" data-i18n="nav.skills">Skills</a>
-        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#work" data-i18n="nav.work">Work</a>
         <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
-      <div class="nav__actions">
-        <button class="chip" id="langToggle" type="button" aria-label="Switch language">বাংলা</button>
-        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle light/dark theme">
-          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/></svg>
-          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+      <div class="nav__act">
+        <button class="pill" id="langBtn" type="button">বাংলা</button>
+        <button class="ibtn" id="themeBtn" type="button" aria-label="Toggle dark / light mode">
+          <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/></svg>
+          <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
         </button>
-        <button class="icon-btn menu-btn" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-        </button>
+        <button class="ibtn menu" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
       </div>
     </div>
   </header>
@@ -68,72 +67,148 @@
   <main id="main">
     <!-- HERO -->
     <section class="hero" id="home">
-      <div class="hero__bg" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span><span class="grid"></span></div>
-      <div class="container hero__inner">
-        <p class="eyebrow reveal"><span class="dot"></span> <span data-i18n="hero.status">Available for freelance work</span></p>
-        <h1 class="hero__title reveal"><span data-i18n="hero.hi">Hi, I'm</span> <span class="grad" data-cfg="name">Robin</span></h1>
-        <p class="hero__role reveal"><span data-i18n="title">Web Developer</span> <span class="cursor" aria-hidden="true">|</span></p>
-        <p class="hero__bio reveal" data-i18n="tagline">I build fast, mobile-first websites and web apps.</p>
-        <div class="hero__cta reveal">
-          <a class="btn btn--primary" href="#projects" data-i18n="hero.cta1">View my work</a>
-          <a class="btn btn--ghost" href="https://wa.me/8801766119905" target="_blank" rel="noopener" data-i18n="hero.cta2">WhatsApp</a>
+      <div class="wrap hero__in">
+        <div class="hero__txt">
+          <p class="eyebrow rv"><span class="live"></span><span data-i18n="hero.eyebrow">Open for new projects</span></p>
+          <h1 class="rv"><span data-i18n="hero.hi">Hi, I'm</span> <span class="grad">Robin</span></h1>
+          <p class="role rv"><span data-i18n="hero.role">Web Developer</span></p>
+          <p class="lead rv" data-i18n="hero.tagline">I design and build fast, modern, mobile-first websites and web apps that look great and are easy to use.</p>
+          <div class="cta rv">
+            <a class="btn btn--wa" href="https://wa.me/8801766119905" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4c-1-1.6-1.5-3.4-1.5-5.2C2.2 6.6 6.6 2.2 12 2.2s9.8 4.4 9.8 9.8-4.4 9.8-9.8 9.8z"/></svg>
+              <span data-i18n="cta.wa">Chat on WhatsApp</span></a>
+            <a class="btn btn--ghost" href="https://github.com/mdrbnbd" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg>
+              GitHub</a>
+          </div>
         </div>
-        <ul class="stats reveal" id="stats"></ul>
+        <div class="hero__pic rv">
+          <div class="ring">
+            <picture>
+              <source srcset="img/robin.webp" type="image/webp" />
+              <img src="img/robin.jpg" width="600" height="600" alt="Robin, web developer" fetchpriority="high" />
+            </picture>
+          </div>
+          <span class="chip chip--a">&lt;/&gt; <span data-i18n="chip.code">Clean code</span></span>
+          <span class="chip chip--b">📱 <span data-i18n="chip.mobile">Mobile-first</span></span>
+        </div>
       </div>
-      <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+      <a href="#about" class="scroll" aria-label="Scroll down"><span></span></a>
     </section>
 
     <!-- ABOUT -->
-    <section class="section" id="about">
-      <div class="container about">
-        <div class="about__avatar reveal" aria-hidden="true">
-          <div class="avatar" id="avatar"><span>R</span></div>
+    <section class="sec" id="about">
+      <div class="wrap about">
+        <div class="rv">
+          <p class="kicker" data-i18n="about.k">About me</p>
+          <h2 data-i18n="about.h">Turning ideas into fast, beautiful websites</h2>
         </div>
-        <div class="reveal">
-          <h2 class="section__title"><span class="num">01.</span> <span data-i18n="nav.about">About</span></h2>
-          <p class="lead" data-i18n="bio">Bio</p>
-          <p class="muted"><span aria-hidden="true">📍</span> <span data-i18n="location">Bangladesh</span></p>
+        <div class="about__body rv">
+          <p data-i18n="about.p1">I'm Robin, a web developer from Bangladesh. I build websites and web apps that load quickly on every phone, look clean, and are simple for real people to use.</p>
+          <p data-i18n="about.p2">From a single landing page to a full web app, I take care of the design, the code and getting it live on your own domain, and I write in both English and Bangla.</p>
+          <ul class="facts">
+            <li><span>📍</span><span data-i18n="about.loc">Based in Bangladesh</span></li>
+            <li><span>🌐</span><span data-i18n="about.lang">English &amp; বাংলা</span></li>
+            <li><span>⚡</span><span data-i18n="about.focus">Performance &amp; mobile-first</span></li>
+          </ul>
         </div>
       </div>
     </section>
 
     <!-- SKILLS -->
-    <section class="section section--alt" id="skills">
-      <div class="container">
-        <h2 class="section__title reveal"><span class="num">02.</span> <span data-i18n="nav.skills">Skills</span></h2>
-        <p class="section__sub reveal" data-i18n="skills.sub">Tools and technologies I use every day.</p>
-        <div class="skills" id="skillsList"></div>
+    <section class="sec sec--alt" id="skills">
+      <div class="wrap">
+        <div class="head rv">
+          <p class="kicker" data-i18n="skills.k">Tech stack</p>
+          <h2 data-i18n="skills.h">Tools I work with</h2>
+        </div>
+        <ul class="stack">
+          <li class="rv"><b style="--c:#e34f26">HTML</b><span data-i18n="sk.html">Semantic, accessible markup</span></li>
+          <li class="rv"><b style="--c:#2965f1">CSS</b><span data-i18n="sk.css">Responsive layouts &amp; animation</span></li>
+          <li class="rv"><b style="--c:#f7df1e">JavaScript</b><span data-i18n="sk.js">Interactive, fast front-ends</span></li>
+          <li class="rv"><b style="--c:#61dafb">React</b><span data-i18n="sk.react">Component-based web apps</span></li>
+          <li class="rv"><b style="--c:#5fa04e">Node.js</b><span data-i18n="sk.node">APIs &amp; server-side logic</span></li>
+          <li class="rv"><b style="--c:#a78bfa">PWA</b><span data-i18n="sk.pwa">Installable, offline-ready apps</span></li>
+          <li class="rv"><b style="--c:#9ca3af">GitHub Pages</b><span data-i18n="sk.ghp">Hosting with custom domains &amp; HTTPS</span></li>
+          <li class="rv"><b style="--c:#22d3ee">API Integration</b><span data-i18n="sk.api">Connecting to third-party services</span></li>
+          <li class="rv"><b style="--c:#f472b6">UI/UX</b><span data-i18n="sk.ux">Clean, user-friendly design</span></li>
+        </ul>
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section class="section" id="projects">
-      <div class="container">
-        <h2 class="section__title reveal"><span class="num">03.</span> <span data-i18n="nav.projects">Projects</span></h2>
-        <p class="section__sub reveal" data-i18n="projects.sub">Things I've built and shipped.</p>
-        <div class="projects" id="projectsList"></div>
+    <!-- SERVICES -->
+    <section class="sec" id="services">
+      <div class="wrap">
+        <div class="head rv">
+          <p class="kicker" data-i18n="svc.k">Services</p>
+          <h2 data-i18n="svc.h">How I can help you</h2>
+        </div>
+        <div class="svc">
+          <article class="card rv"><span class="ic">💻</span><h3 data-i18n="svc.1t">Website Development</h3><p data-i18n="svc.1p">Modern, responsive websites for businesses, shops and personal brands.</p></article>
+          <article class="card rv"><span class="ic">⚙️</span><h3 data-i18n="svc.2t">Web Apps</h3><p data-i18n="svc.2p">Interactive tools, dashboards and installable PWAs with real API data.</p></article>
+          <article class="card rv"><span class="ic">🚀</span><h3 data-i18n="svc.3t">Landing Pages</h3><p data-i18n="svc.3p">Fast, focused pages built to turn visitors into customers.</p></article>
+          <article class="card rv"><span class="ic">🛒</span><h3 data-i18n="svc.4t">E-commerce</h3><p data-i18n="svc.4p">Online stores with product catalogs, carts and easy ordering.</p></article>
+          <article class="card rv"><span class="ic">🛠️</span><h3 data-i18n="svc.5t">Maintenance &amp; Support</h3><p data-i18n="svc.5p">Updates, fixes, speed improvements and domain/hosting setup.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="sec sec--alt" id="work">
+      <div class="wrap">
+        <div class="head rv">
+          <p class="kicker" data-i18n="work.k">Featured project</p>
+          <h2 data-i18n="work.h">Recent work</h2>
+        </div>
+        <article class="project rv">
+          <a class="project__shot" href="https://vip.dfaster.com" target="_blank" rel="noopener" aria-label="Open VIP Number Finder">
+            <div class="phone">
+              <picture>
+                <source srcset="img/vip-number-finder.webp" type="image/webp" />
+                <img src="img/vip-number-finder.jpg" width="540" height="810" alt="VIP Number Finder app screenshot" decoding="async" />
+              </picture>
+            </div>
+          </a>
+          <div class="project__body">
+            <span class="badge" data-i18n="work.badge">Live · PWA</span>
+            <h3 data-i18n="work.t">VIP Number Finder</h3>
+            <p data-i18n="work.p">A Bangla Progressive Web App that finds available VIP Robi and Airtel mobile numbers. Search by series or your own pattern (birthdays, repeating digits, sequences) and see every number ranked by a VIP score. Installable on any phone.</p>
+            <ul class="tags"><li>PWA</li><li>JavaScript</li><li>API</li><li>বাংলা</li></ul>
+            <div class="row">
+              <a class="btn btn--pri" href="https://vip.dfaster.com" target="_blank" rel="noopener"><span data-i18n="work.live">Visit live site</span> ↗</a>
+              <a class="btn btn--ghost" href="https://github.com/mdrbnbd/vip-number-finder" target="_blank" rel="noopener" data-i18n="work.code">Source code</a>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section class="section" id="contact">
-      <div class="container contact reveal">
-        <h2 class="section__title"><span class="num">04.</span> <span data-i18n="nav.contact">Contact</span></h2>
-        <p class="lead" data-i18n="contact.text">Have a project in mind? Let's talk.</p>
-        <p><a class="btn btn--primary" href="https://wa.me/8801766119905" target="_blank" rel="noopener">💬 <span data-i18n="contact.wa">Chat on WhatsApp</span></a></p>
-        <div class="contact__grid" id="contactList"></div>
+    <section class="sec" id="contact">
+      <div class="wrap">
+        <div class="contact rv">
+          <p class="kicker" data-i18n="ct.k">Contact</p>
+          <h2 data-i18n="ct.h">Let's build your next website</h2>
+          <p class="lead" data-i18n="ct.p">Tell me about your project on WhatsApp. I usually reply quickly.</p>
+          <div class="cta cta--c">
+            <a class="btn btn--wa btn--lg" href="https://wa.me/8801766119905" target="_blank" rel="noopener">💬 <span data-i18n="ct.wa">WhatsApp</span>&nbsp;<b>01766119905</b></a>
+            <a class="btn btn--ghost btn--lg" href="https://github.com/mdrbnbd" target="_blank" rel="noopener">GitHub · mdrbnbd</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer__inner">
-      <p>© <span id="year"></span> <span data-cfg="name">Robin</span> · <span data-i18n="footer.made">Built with HTML, CSS &amp; JavaScript · Hosted on GitHub Pages</span></p>
-      <a href="#home" class="to-top" data-i18n="footer.top">Back to top ↑</a>
+  <footer class="foot">
+    <div class="wrap foot__in">
+      <p>© <span id="year">2026</span> Robin · <span data-i18n="foot">Web Developer, Bangladesh</span></p>
+      <a href="#home" data-i18n="top">Back to top ↑</a>
     </div>
   </footer>
 
-  <noscript><p class="container" style="padding:1rem">This site works best with JavaScript enabled. GitHub: <a href="https://github.com/mdrbnbd">github.com/mdrbnbd</a></p></noscript>
+  <a class="fab" href="https://wa.me/8801766119905" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4c-1-1.6-1.5-3.4-1.5-5.2C2.2 6.6 6.6 2.2 12 2.2s9.8 4.4 9.8 9.8-4.4 9.8-9.8 9.8z"/></svg>
+  </a>
   <script src="script.js" defer></script>
 </body>
 </html>
