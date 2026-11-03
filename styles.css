@@ -188,3 +188,8 @@ h2{font-size:clamp(1.8rem,4.4vw,2.7rem);line-height:1.15;letter-spacing:-.03em;f
   *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
   .rv{opacity:1;transform:none}
 }
+
+.project+.project{margin-top:2rem}
+.project--alt .project__shot{order:2}
+@media (max-width:900px){.project--alt .project__shot{order:0}}
+.project .row{flex-wrap:wrap}
