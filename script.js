@@ -49,50 +49,13 @@ const CONFIG = {
       repo: "https://github.com/mdrbnbd/vip-number-finder",
       featured: true,
       emoji: "📞"
-    },
-    {
-      placeholder: true,
-      title: { en: "Your Project Title", bn: "আপনার প্রজেক্টের নাম" },
-      description: {
-        en: "PLACEHOLDER — describe another project here: what it does, who it's for and what tech you used. Edit CONFIG.projects in script.js.",
-        bn: "প্লেসহোল্ডার — এখানে আরেকটা প্রজেক্টের বর্ণনা দিন: এটা কী করে, কার জন্য, কোন প্রযুক্তি দিয়ে বানানো। script.js-এর CONFIG.projects এডিট করুন।"
-      },
-      tags: ["HTML", "CSS", "JavaScript"],
-      live: "",
-      repo: "",
-      emoji: "🛠️"
-    },
-    {
-      placeholder: true,
-      title: { en: "Another Project", bn: "আরেকটা প্রজেক্ট" },
-      description: {
-        en: "PLACEHOLDER — add a landing page, an online shop, a dashboard or any client work you're proud of.",
-        bn: "প্লেসহোল্ডার — একটা ল্যান্ডিং পেজ, অনলাইন দোকান, ড্যাশবোর্ড বা গর্ব করার মতো যেকোনো ক্লায়েন্টের কাজ যোগ করুন।"
-      },
-      tags: ["Responsive", "API"],
-      live: "",
-      repo: "",
-      emoji: "✨"
     }
-  ],
-
-  services: [
-    { icon: "💻", title: { en: "Website Development", bn: "ওয়েবসাইট ডেভেলপমেন্ট" },
-      text: { en: "Modern, responsive websites and landing pages that load fast on any phone.", bn: "আধুনিক, রেসপন্সিভ ওয়েবসাইট আর ল্যান্ডিং পেজ, যেকোনো ফোনে দ্রুত খোলে।" } },
-    { icon: "📱", title: { en: "Progressive Web Apps", bn: "প্রোগ্রেসিভ ওয়েব অ্যাপ" },
-      text: { en: "Installable, offline-ready web apps that feel like native mobile apps.", bn: "ইনস্টলযোগ্য, অফলাইনেও চলে এমন ওয়েব অ্যাপ, দেখতে মোবাইল অ্যাপের মতো।" } },
-    { icon: "🔌", title: { en: "API Integration", bn: "API ইন্টিগ্রেশন" },
-      text: { en: "Connecting your site to third-party APIs, data sources and services.", bn: "আপনার সাইটকে বিভিন্ন API, ডেটা সোর্স আর সার্ভিসের সাথে যুক্ত করা।" } },
-    { icon: "🌐", title: { en: "Hosting & Domains", bn: "হোস্টিং ও ডোমেইন" },
-      text: { en: "Deploying on GitHub Pages and connecting your custom domain with HTTPS.", bn: "GitHub Pages-এ লাইভ করা আর HTTPS সহ আপনার নিজের ডোমেইন যুক্ত করা।" } }
   ],
 
   // Contact — replace placeholders with your real details, then set placeholder: false
   contact: [
-    { type: "github", label: "GitHub", value: "github.com/mdrbnbd", url: "https://github.com/mdrbnbd", icon: "🐙" },
-    { type: "email", label: "Email", value: "you@example.com", url: "mailto:you@example.com", icon: "✉️", placeholder: true },
-    { type: "whatsapp", label: "WhatsApp", value: "+8801XXXXXXXXX", url: "", icon: "💬", placeholder: true },
-    { type: "facebook", label: "Facebook", value: "facebook.com/your-profile", url: "", icon: "📘", placeholder: true }
+    { type: "whatsapp", label: "WhatsApp", value: "01766119905", url: "https://wa.me/8801766119905", icon: "💬" },
+    { type: "github", label: "GitHub", value: "github.com/mdrbnbd", url: "https://github.com/mdrbnbd", icon: "🐙" }
   ]
 };
 
@@ -100,12 +63,11 @@ const CONFIG = {
 const I18N = {
   en: {
     "ui.skip": "Skip to content",
-    "nav.about": "About", "nav.skills": "Skills", "nav.projects": "Projects", "nav.services": "Services", "nav.contact": "Contact",
+    "nav.about": "About", "nav.skills": "Skills", "nav.projects": "Projects", "nav.contact": "Contact",
     "hero.status": "Available for freelance work", "hero.hi": "Hi, I'm",
-    "hero.cta1": "View my work", "hero.cta2": "Hire me",
+    "hero.cta1": "View my work", "hero.cta2": "WhatsApp", "contact.wa": "Chat on WhatsApp",
     "skills.sub": "Tools and technologies I use every day.",
-    "projects.sub": "Things I've built and shipped.",
-    "services.sub": "How I can help you.",
+    "projects.sub": "My live project.",
     "contact.text": "Have a project in mind? Let's build it together.",
     "footer.made": "Built with HTML, CSS & JavaScript · Hosted on GitHub Pages",
     "footer.top": "Back to top ↑",
@@ -114,12 +76,11 @@ const I18N = {
   },
   bn: {
     "ui.skip": "মূল অংশে যান",
-    "nav.about": "পরিচিতি", "nav.skills": "দক্ষতা", "nav.projects": "প্রজেক্ট", "nav.services": "সেবা", "nav.contact": "যোগাযোগ",
+    "nav.about": "পরিচিতি", "nav.skills": "দক্ষতা", "nav.projects": "প্রজেক্ট", "nav.contact": "যোগাযোগ",
     "hero.status": "ফ্রিল্যান্স কাজের জন্য প্রস্তুত", "hero.hi": "হাই, আমি",
-    "hero.cta1": "আমার কাজ দেখুন", "hero.cta2": "কাজ দিন",
+    "hero.cta1": "আমার কাজ দেখুন", "hero.cta2": "হোয়াটসঅ্যাপ", "contact.wa": "হোয়াটসঅ্যাপে মেসেজ দিন",
     "skills.sub": "যেসব টুল আর প্রযুক্তি দিয়ে প্রতিদিন কাজ করি।",
-    "projects.sub": "যা বানিয়েছি আর লাইভ করেছি।",
-    "services.sub": "আমি আপনাকে যেভাবে সাহায্য করতে পারি।",
+    "projects.sub": "আমার লাইভ প্রজেক্ট।",
     "contact.text": "কোনো প্রজেক্টের আইডিয়া আছে? চলুন একসাথে বানাই।",
     "footer.made": "HTML, CSS ও JavaScript দিয়ে তৈরি · GitHub Pages-এ হোস্ট করা",
     "footer.top": "উপরে যান ↑",
@@ -171,12 +132,6 @@ const I18N = {
           </div>
         </div>
       </article>`).join("");
-
-    $("#servicesList").innerHTML = CONFIG.services.map((s, i) => `
-      <div class="service reveal" style="--d:${i * 70}ms">
-        <span class="service__icon" aria-hidden="true">${esc(s.icon)}</span>
-        <h3>${esc(t(s.title))}</h3><p>${esc(t(s.text))}</p>
-      </div>`).join("");
 
     $("#contactList").innerHTML = CONFIG.contact.map((c) => {
       const inner = `<span class="contact__icon" aria-hidden="true">${esc(c.icon)}</span>
